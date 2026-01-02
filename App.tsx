@@ -38,7 +38,7 @@ const App: React.FC = () => {
           <WishCard
             icon={<Heart className="w-10 h-10 text-rose-400" />}
             title="You're Perfect! 💖"
-            description="Happy Birthday to someone who is perfect in every way. Your kindness, charm, and beauty shine so brightly. You're a true gem, Sabitha!"
+            description="Happy Birthday to someone who is perfect in every way. Your kindness, charm, and beauty shine so brightly. You're a true gem, Chinni! The next time you say you're not pretty, poi addham lo chusko pandhii 😁"
             animationDelay={0.6}
           />
           
