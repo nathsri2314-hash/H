@@ -19,7 +19,7 @@ const App: React.FC = () => {
       <AnimatedBackground />
       <div className="relative z-10">
         <Hero />
-        <main className="container mx-auto px-6 py-12 md:py-20 flex flex-col items-center gap-12 md:gap-20">
+        <main className="container mx-auto px-4 sm:px-6 py-12 md:py-20 flex flex-col items-center gap-12 md:gap-20">
           
           <WishCard
             icon={<Crown className="w-10 h-10 text-amber-400" />}
@@ -38,7 +38,7 @@ const App: React.FC = () => {
           <WishCard
             icon={<Heart className="w-10 h-10 text-rose-400" />}
             title="You're Perfect! 💖"
-            description="Happy Birthday to someone who is perfect in every way. Your kindness, charm, and beauty shine so brightly. You're a true gem, Chinni! The next time you say you're not pretty, poi addham lo chusko pandhii 😁"
+            description="Happy Birthday to someone who is perfect in every way. Your kindness, charm, and beauty shine so brightly. You're a true gem, Sab's! The next time you say you're not pretty, poi addham lo chusko pandhii 😁"
             animationDelay={0.6}
           />
           
@@ -71,8 +71,12 @@ const App: React.FC = () => {
               />
           </div>
 
+          <p className="font-great-vibes text-4xl sm:text-5xl md:text-7xl text-pink-600 my-12 text-center text-glow animate-shine">
+              happy birthday sabitha
+          </p>
+
           <div className="text-center p-8 bg-rose-50/60 backdrop-blur-lg rounded-2xl shadow-xl max-w-2xl w-full border border-white/20">
-              <h2 className="font-great-vibes text-5xl md:text-7xl text-pink-500 mb-6">Make a Wish!</h2>
+              <h2 className="font-great-vibes text-4xl sm:text-5xl md:text-7xl text-pink-500 mb-6">Make a Wish!</h2>
               <BirthdayCake />
               <p className="text-lg text-slate-600 mt-6">
                 May all your dreams and wishes for the coming year sparkle and come true. You deserve all the happiness in the world.
@@ -81,19 +85,19 @@ const App: React.FC = () => {
         </main>
         
         <div className="text-center py-16 md:py-24 px-6 bg-rose-50/50 backdrop-blur-sm">
-            <h3 className="font-great-vibes text-4xl md:text-6xl text-pink-500 mb-4">
+            <h3 className="font-great-vibes text-3xl sm:text-4xl md:text-6xl text-pink-500 mb-4">
                 To The One and Only
             </h3>
             <p className="max-w-3xl mx-auto text-lg text-slate-600 leading-relaxed">
                 birthday gift isthey thisukoru inka itla anna cheppali ga eeeee
             </p>
-            <p className="font-great-vibes text-5xl md:text-7xl text-pink-600 mt-8 font-bold">
+            <p className="font-great-vibes text-4xl sm:text-5xl md:text-7xl text-pink-600 mt-8 font-bold">
                 happy birthday thikka
             </p>
             <p className="text-2xl md:text-3xl text-slate-700 mt-4">
                 ammagaruu 🙇
             </p>
-            <p className="text-md text-slate-500 mt-8 italic">
+            <p className="text-base text-slate-500 mt-8 italic">
                 chana ne pettali anukunna no time 😁 happy birthday amma
             </p>
         </div>

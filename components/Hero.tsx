@@ -7,8 +7,8 @@ const Hero: React.FC = () => {
     <header className="h-screen flex flex-col items-center justify-center text-center p-4">
       <div className="animate-fade-in-down">
         <h2 className="text-3xl md:text-5xl text-pink-500 font-great-vibes">A Very Special Day For</h2>
-        <h1 className="text-6xl sm:text-7xl md:text-9xl font-great-vibes text-pink-400 my-4 text-glow animate-shine">
-          Sabitha
+        <h1 className="text-5xl sm:text-7xl md:text-9xl font-great-vibes text-pink-400 my-4 text-glow animate-shine">
+          Sab's
         </h1>
         <div className="flex items-center justify-center gap-4 text-xl md:text-2xl text-rose-400">
             <Sparkles className="w-6 h-6 animate-gentle-sparkle"/>
