@@ -48,11 +48,11 @@ const WishCard: React.FC<WishCardProps> = ({ icon, title, description, animation
   return (
     <div
       ref={ref}
-      className={`bg-white/50 backdrop-blur-lg p-8 rounded-2xl shadow-lg w-full max-w-lg border border-pink-200/80 ${cardClasses} hover:border-pink-400 hover:shadow-2xl hover:shadow-pink-500/10 transition-all`}
+      className={`group bg-white/50 backdrop-blur-lg p-8 rounded-2xl shadow-lg w-full max-w-lg border border-pink-200/80 ${cardClasses} hover:border-pink-400 hover:shadow-2xl hover:shadow-pink-500/10 transition-all duration-300 hover:-translate-y-2`}
       style={{ transitionDelay: `${animationDelay}s` }}
     >
       <div className="flex items-center gap-4 mb-4">
-        <div className="bg-pink-500/10 p-3 rounded-full">
+        <div className="bg-pink-500/10 p-3 rounded-full group-hover:scale-110 group-hover:rotate-[-10deg] transition-transform duration-300">
           {icon}
         </div>
         <h3 className="text-2xl font-bold text-slate-800">{title}</h3>

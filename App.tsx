@@ -4,11 +4,18 @@ import AnimatedBackground from './components/AnimatedBackground';
 import Hero from './components/Hero';
 import WishCard from './components/WishCard';
 import BirthdayCake from './components/BirthdayCake';
+import Sparkle from './components/Sparkle';
 import { Heart, Star, ShoppingBag, Drumstick, Crown, Laugh } from 'lucide-react';
 
 const App: React.FC = () => {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-white via-rose-50 to-pink-100 text-slate-800 overflow-hidden">
+    <div className="relative min-h-screen text-slate-800 overflow-hidden">
+      <Sparkle top="10%" left="5%" size={20} />
+      <Sparkle top="20%" right="10%" size={15} />
+      <Sparkle top="70%" left="15%" size={25} />
+      <Sparkle top="85%" right="5%" size={18} />
+      <Sparkle top="50%" left="40%" size={12} />
+      
       <AnimatedBackground />
       <div className="relative z-10">
         <Hero />

@@ -13,15 +13,21 @@
     <style>
       body {
         font-family: 'Poppins', sans-serif;
-        background-color: #fff1f2; /* rose-50 */
+        background: linear-gradient(300deg, #fff1f2, #fce7f3, #fff);
+        background-size: 180% 180%;
+        animation: background-pan 18s ease infinite;
         overflow-x: hidden;
       }
       .font-great-vibes {
         font-family: 'Great Vibes', cursive;
       }
       .text-glow {
-        /* Subtle black shadow for outline effect, then the pink glow */
-        text-shadow: 0 0 3px #000, 0 0 10px rgba(236, 72, 153, 0.8), 0 0 25px rgba(219, 39, 119, 0.6);
+        text-shadow: 0 0 10px rgba(236, 72, 153, 0.8), 0 0 25px rgba(219, 39, 119, 0.6);
+      }
+      @keyframes background-pan {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
       }
       @keyframes float {
         0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
@@ -37,12 +43,19 @@
       .animate-fall {
         animation: fall linear infinite;
       }
-      @keyframes sparkle {
-        0%, 100% { opacity: 0; transform: scale(0.5); }
-        50% { opacity: 1; transform: scale(1.2); }
+      @keyframes gentle-sparkle {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.2) rotate(10deg); opacity: 1; }
       }
-      .animate-sparkle {
-        animation: sparkle 1.5s infinite;
+      .animate-gentle-sparkle {
+        animation: gentle-sparkle 2s ease-in-out infinite;
+      }
+       @keyframes twinkle {
+        0%, 100% { opacity: 0; transform: scale(0.5) rotate(0deg); }
+        50% { opacity: 1; transform: scale(1) rotate(15deg); }
+      }
+      .animate-twinkle {
+          animation: twinkle 2s ease-in-out infinite;
       }
       @keyframes candle-flicker {
         0%, 100% { transform: scale(1, 1); opacity: 1; }

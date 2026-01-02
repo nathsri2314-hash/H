@@ -11,9 +11,9 @@ const Hero: React.FC = () => {
           Sabitha
         </h1>
         <div className="flex items-center justify-center gap-4 text-xl md:text-2xl text-rose-400">
-            <Sparkles className="w-6 h-6 animate-pulse"/>
+            <Sparkles className="w-6 h-6 animate-gentle-sparkle"/>
             <span className="font-semibold">Happy Birthday!</span>
-            <Sparkles className="w-6 h-6 animate-pulse"/>
+            <Sparkles className="w-6 h-6 animate-gentle-sparkle"/>
         </div>
       </div>
       <div className="absolute bottom-10 animate-bounce">
